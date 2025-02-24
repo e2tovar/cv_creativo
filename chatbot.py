@@ -1,6 +1,7 @@
 import os
 from openai import OpenAI
 from dotenv import load_dotenv
+import streamlit as st
 
 from prompt import JOKER_PROMPT, WELCOME_PROMPT, CV_PROMPT
 
@@ -9,8 +10,8 @@ load_dotenv()
 class Chatbot:
     def __init__(self):
         self.client = OpenAI(
-            base_url=os.environ["GITHUB_BASE"],
-            api_key=os.environ["GITHUB_KEY"],
+            base_url=st.secrets["GITHUB_BASE"],
+            api_key=st.secrets["GITHUB_KEY"],
         )
 
     def get_response(self, user_input, cv, chat_history):
