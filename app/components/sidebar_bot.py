@@ -6,14 +6,14 @@ from app.utils.embeddings_utils import find_most_relevant_chunk, get_all_cv
 from app.utils.images import image_to_base64
 
 
-def show_sidebar_bots(chunks, embeddings, model_embeddigns, botsito):
+def show_sidebar_bots(botsito, cv):
     with st.sidebar:
         st.text_input(
             'pregunta',
             label_visibility="hidden",
             key="user_input",
             on_change=__call_chatbot,
-            args=(botsito, chunks, embeddings, model_embeddigns)
+            args=(botsito, cv, st.session_state.chat_history)
             )
 
         __show_sidebar_welcome_bot(botsito, st.session_state.chat_history)
@@ -49,13 +49,11 @@ def __show_sidebar_welcome_bot(botsito: Chatbot, chat_history=[]):
         )
 
 
-def __call_chatbot(botsito: Chatbot, chunks, embeddings, model_embeddings):
+def __call_chatbot(botsito: Chatbot, cv, chat_history):
     user_input = st.session_state.user_input
     if user_input:
-        relevant_chunk = find_most_relevant_chunk(user_input, chunks, embeddings, model_embeddings)
-        relevant_chunk = get_all_cv()
-        response = botsito.get_response(user_input, relevant_chunk)
-        st.session_state.chat_history.append((user_input + '-----' + relevant_chunk, response))
+        response = botsito.get_response(user_input, cv, chat_history)
+        st.session_state.chat_history.append((user_input + cv, response))
 
 
 # Función para simular el efecto de escritura

@@ -12,15 +12,19 @@ from app.components.publications import show_publications
 from app.components.soft_skill import show_soft_skills
 from app.components.sidebar_bot import show_sidebar_bots
 from app.components.footer import show_footer
+from app.utils.text_utils import load_text_from_txt
 
 from chatbot import Chatbot
-from app.settings import PAGE_TITLE, PAGE_ICON, PROFILES_PIC_NAME, MAX_HISTORY
+from app.settings import PAGE_TITLE, PAGE_ICON, PROFILES_PIC_NAME, MAX_HISTORY, CV_TXT
 
 # --- PATH ---
 current_dir = os.path.dirname(os.path.abspath(__file__))
 css_file = os.path.join(current_dir, "app", "styles", "main.css")
 resume_file = os.path.join(current_dir, "app", "assets", "CV.pdf")
 profile_pic = os.path.join(current_dir, "app", "assets", PROFILES_PIC_NAME)
+
+cv_txt_path = os.path.join(current_dir, "app", "assets", CV_TXT)
+cv_txt = load_text_from_txt(cv_txt_path)
 
 
 # --- PAGE CONFIG ---
@@ -48,7 +52,7 @@ if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
 
 # DEBUG
-st.write(f"History: {st.session_state.chat_history}")
+# st.write(f"History: {st.session_state.chat_history}")
 
 
 # --- HEADER ---
@@ -74,7 +78,7 @@ show_soft_skills()
 
 # --- SIDEBAR BOT ---
 chat_result = show_sidebar_bots(
-    chunks=chunks, model_embeddigns=model_embeddings, embeddings=embeddings, botsito=st.session_state.chatbot
+    cv=cv_txt, botsito=st.session_state.chatbot
 )
 
 

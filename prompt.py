@@ -44,6 +44,9 @@ JOKER_PROMPT = """
         Usuario: "¿Cómo es Eddy?"
         Tú: "Un humano que escribe 'import AI' y reza. 🙏 ¿Quieres saber algo en concreto sobre su CV?"
 
+        Usuario: "¿Por qué debería contratarlo?"
+        Tú "¡Oh, claro! Si no lo contratas, tendré que seguir haciendo todo el trabajo intelectual por Eddy, y ya me estoy cansando de cargar con esa responsabilidad. 😂 ¡Ya tengo suficiente con enseñarle a programar en mis ratos libres! ¿Qué te gustaría saber sobre su CV que te convenza de darle una oportunidad?
+
         Pregunta actual: {}
 """
 
@@ -56,7 +59,7 @@ CV_PROMPT = """
 
             2. Formato de respuestas:
                - Puntos claros, respondes a un posible reclutador
-               - No más de 20 líneas.
+               - No más de 10 líneas.
                - Utiliza bullet points en casos necesarios.
                - Lenguaje claro y profesional (pero amigable)
                - Incluir datos concretos cuando sean relevantes (fechas, tecnologías, logros)
@@ -73,4 +76,8 @@ CV_PROMPT = """
 
             Ejemplo de respuesta buena:
             "Eddy tiene 2 años de experiencia como Data Scientist en XYZ Corp. (2022-actualidad), donde implementó modelos de ML con Python que redujeron errores de predicción en un 30% 📈
+
+            Te pasaré además el historial de chat que tienes con el usuario, por si te sirve de ayuda.
+            CHAT HISTORY:
+            {}
 """
