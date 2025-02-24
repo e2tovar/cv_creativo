@@ -13,10 +13,10 @@ class Chatbot:
             api_key=os.environ["GITHUB_KEY"],
         )
 
-    def get_response(self, user_input, context):
+    def get_response(self, user_input, cv, chat_history):
         response = self.client.chat.completions.create(
             messages=[
-                {"role": "system", "content": self.__generate_cv_prompt(context)},
+                {"role": "system", "content": self.__generate_cv_prompt(cv, chat_history)},
                 {"role": "user", "content": user_input}
             ],
             model="gpt-4o-mini",
@@ -55,5 +55,5 @@ class Chatbot:
         return JOKER_PROMPT.format(user_input)
 
     @staticmethod
-    def __generate_cv_prompt(context):
-        return CV_PROMPT.format(context)
+    def __generate_cv_prompt(context, chat_history):
+        return CV_PROMPT.format(context, chat_history)

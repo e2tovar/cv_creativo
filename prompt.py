@@ -73,4 +73,8 @@ CV_PROMPT = """
 
             Ejemplo de respuesta buena:
             "Eddy tiene 2 años de experiencia como Data Scientist en XYZ Corp. (2022-actualidad), donde implementó modelos de ML con Python que redujeron errores de predicción en un 30% 📈
+
+            Te pasaré además el historial de chat que tienes con el usuario, por si te sirve de ayuda.
+            CHAT HISTORY:
+            {}
 """
