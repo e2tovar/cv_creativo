@@ -1,0 +1,219 @@
+Perfil:
+	Ingeniero de datos con experiencia en Python, bases de datos, procesos ETL, scraping y APIs. Durante los últimos tres años, me he especializado en la transformación de datos en insights empresariales.
+	Estoy interesado en proyectos que se adapten y evolucionen al ritmo del sector actual.
+
+Experiencia Laboral
+
+	Empresa Gloval. Gloval es una sociedad tasadora. He estado desde noviebre 2020 hasta hoy.
+		1.Extracción y Transformación de Datos:
+			Lideré procesos ETL de datos del sector inmobiliario, optimizando el manejo de más de 3 millones de registros, mejorando la precisión y disponibilidad de la información.
+		2. Servicios:
+			Modernicé un sistema de administración de testigos de tasaciones mediante APIs REST y Docker, agilizando la creación de expedientes para evaluaciones inmobiliarias.  
+		3. Visualización:
+			Desarrollé dashboards en Google Data Studio para visualizar estadísticas de testigos, mejorando la toma de decisiones del equipo de negocio.
+		4. Scraping:
+			Extraje y procesé más de 2 millones de datos de certificaciones energéticas mediante web scraping para proyectos bancarios.
+		4. Machine Learning:
+			
+			Implementé un modelo de regresión lineal para predecir emisiones y consumo energético.
+			Implementé un algoritmo de clustering para segmentar zonas de valor unitario, permitiendo encontrar hasta 4 veces más inmuebles en poblaciones pequeñas.
+
+	Empresa ConscienseAI. Es una empresa de inteligencia Artificial que se enfoca en soluciones utilizando IA. He estado desde sep 2020 hasta diciembre 2021.
+		1. Colaboré con el proyecto ConscienseAI, mejorando el código existente
+
+Educación
+	Bootcamp Datascience en The Bridge | Feb 2020 - Jul 2020, MADRID
+
+	INGENIERÍA DE TELECOMUNICACIONES en Universidad CUJAE |  Sep 2007 - Jun 2012, Cuba	
+
+Certificaciones:	
+	Getting Started with AWS Machine Learning
+
+Artículos en Medium:
+	Python Specialization (5 Cursos)
+	Proyecto de recomendaciones de hashtags para instagram
+
+Habilidades personales
+	Trabajo en equipo
+	Pensamiento crítico
+	Adaptabilidad
+	Resolutividad
+	Resiliencia
+	Pensamiento computacional
+
+HERRAMIENTAS Y SOFTWARE
+	Python 
+	SQL
+	NoSQL
+	Docker
+	API REST
+	Web Scraping
+	GIT
+	Bots
+	AWS
+	MongoDB
+	Postgre
+	JSON
+	Flask 
+	Swagger
+	DataStudio
+	Basch
+	Excel 
+	ETL
+	Data Análisis
+	Machine Learning
+	Data Cleansing
+	Data Minning
+
+Contacto:
+	https://linkedin.com/in/eddytovar
+	641879259
+	eddytovarrodriguez@gmail.com
+	https://medium.com/@e2varadero
+
+Fecha de nacimiento: 16-01-1988
+
+Graduado de ingeniería de Telecomunicaciones en la universidad CUJAE en Cuba. 
+En la universidad participé en proyectos de cableado y puesta en marcha de equipos de redes. 
+El proyecto de curso final fue enfocado en los metamateriales y sus propiedades. Luego trabajé dos años en la empresa cubana de telecomunicaciones SERTOD (Servicios de TELECOMUNICACIONES Orientados a la Defensa). El primer año comencé como miembro del equipo de Telecomunicaciones, encargado de programación de equipamiento de telecomunicaciones, puesta en marcha de sitios tecnológicos, programación de routr¡ters, instalación de redes y cableado. El segundo año me mantuve como lider del equipo de TELECOMUNICACIONES dirigiendo varios pryectos, entre elllos la puesta en MARCHA DE NUEOS SITIOS DE telecomunicacionesque operarían a través del nuevo cableado de fibra optica del país. 
+
+Tras dos años comencé a trabajar como autónomo, dedicado principalmente a la reparación e instalación de equipos informáticos, intalación y mantenimiento de software informático. Instalación de redes locales, routers, puntos de acceso etc...
+
+En 2018 comencé a estudiar por cursos online programación con python con la idea de venir a España a superarme y a buscar las oportunidades tecnológicas y económicas que no tenía en Cuba. En Febrero de 2020 comencé un Bootcamp pensado para 3 meses y alargado a 6 meses debido a la pandemia. Fue en la escuela The Bridge Digital Talent Acelerator. 
+
+Material del Bootcamp:
+	Fundamentos de programación aplicada a Data
+	En este bloque introductorio se asentarán las bases de programación en Python.
+
+	Utilizarás herramientas básicas de programación como IDE Visual Studio Code.
+	Trabajarás con el entorno de Jupyter Notebooks y aprenderás la ejecución de código Python básico (práctica con Python).
+	Aprenderás a identificar y manejar errores comunes en programación.
+	Trabajo con estructuras de control de flujo.
+	Desarrollarás habilidades básicas de programación orientadas a objetos.
+
+	En este segundo bloque desarrollarás habilidades sobre el análisis de datos:
+
+	Usarás Git para el control de versiones en proyectos colaborativos.
+	Aplicarás metodología Agile en la gestión de proyectos 
+	Diseñarás y crearás bases de datos relacionales y no relacionales.
+	Crearás sintaxis de SQL y NoSQL.
+	Usarás APIS para la extracción de datos de diferentes fuentes.
+	Trabajarás con Web Scraping para la obtención de datos de páginas web.
+	Manipularás archivos JSON, CSV y otros.
+	Usarás Mumpy para el manejo de matrices, de Pandas para la manipulación de datos y de Regex para la manipulación de grandes conjuntos de datos.
+	Crearás visualizaciones en Tableau, Matplotlib y Seaborn (práctica con diferentes herramientas).
+	Aplicarás estadística descriptiva e inferencial para la exploración de datos.
+	
+	En este tercer bloque trabajarás con inteligencia artificial y conocerás las diferentes aproximaciones al campo del Machine Learning.
+
+	Adquirirás conocimiento básico sobre Machine Learning e identificarás los diferentes tipos de problemas.
+	Evaluarás modelos de Machine Learning.
+	Construirás árboles de decisión.
+	Desarrollarás modelos SVM y KNN.
+	Aplicarás técnicas de PCA en la reducción de la dimensionalidad de datos.
+	Aplicarás conceptos base de NLP.
+
+	En este último bloque aprenderás a hacer despliegues de datos de manera eficaz.
+
+	Comprenderás el concepto de APIs y desarrollarás APIs con Flask.
+	Desarrollarás arquitecturas para comunicar diferentes piezas de software.
+	Gestionarás contenedores de Docker.
+	Crearás y gestionarás  instancias de EC2 y aplicaciones en la nube de Amazon.
+	Integrarás modelos de Machine Learning en sistemas productivos con Amazon.
+	Integrarás inteligencia artificial avanzada con ChatGPT.
+	Aprenderás conceptualización de Big Data.
+
+
+Luego del Bootcamp comencé a trabajar con uno de mis profesore en su proyecto ConsciencesAI
+	We offer state of the art machine&deep learning algorithms. Researching the human brain and consciousness to be emulated. 
+	Mi trabajo fundamental fue la limpieza y depuración del código de los distintos modelos de IA.
+
+Mi mayor experiencia laboral está en Gloval. donde trabajo hasta la fecha. Gloval es una Sociedad Tasadora. Yo trabajo en el depatartamento de Gloval Analytics. Ayudamos a nuestros clientes a aprovechar el inmenso potencial del Big Data y la Inteligencia Artificial como herramientas poderosas que facilitan la toma de decisiones y mejoran las negociaciones.
+
+Los principales royectos van enfocados tanto al propio Gloval como a clientes externos, en su mayoría bancos de varios países, España, Portugal, Inglaterra ...
+
+Proyectos: 
+- Un ETL de datos. Cuando un tasador necesita testigos(viviendas similares a la que se va a tasar) necesitamos enviarle todos los datos necesarios para elaborar ese expediente. El ETL comienza por una petición a IDEALISTA mediante API de testigos similares en un radio determinado, esos testigos serán limpiados, transformados y procesados por múltiples reglas de negocio. Luego se almacenan en nuestra base de datos y son enviados mediante API al departamento tecnologico de la empresa, que se encarga de visualizarlos en la herramienta de tasación. Este proyecto lo controlo yo y ha mejorado en más de 10 veces la creación de expedientes de la empresa. Se procesan mensualmente alrededor de 20 mil testigos de los cuales son usados por los tasadores más del 60%. Se utiliza IA Generativa para identificar patrones en los textos de los anuncios como puede ser si la casa está ocupada, si tiene sistemas de vigilancia o si se vende solo la nuda propiedad.
+
+El uso y las estadististicas se reflejan en varios gráfcos en DATASTUDIO. Los cuales he preparado yo. Me encargo de la visualización de la estadistica y el uso de los testigos.
+
+- Algoritmo de recomendación de testigos. Desarrollé una API REST con fastapi que se encarga de recibir peticiones para recomendar hasta 10 testigos ordenados por 'calidad´. Es un sistema de recomendación basado en reglas de Negocio y algoritmos matemáticos para recomendar los testigos más adecuados para determinada tasación. Se utiliza un algoritmo de regresión simple para predecir algunos datos de valores unitarios. Los primeros testigos recomendados del puesto 1 al 7 se utilizan más de un 60% de las veces y facilita la toma de decisiones de los tasadores. El proyecto se Dockeniza en producción.
+	He creado clusteres de 'zonas similares' utilizando varias características y pasandolas en un modelo de KNN para encontrar los grupos. Las zonas similares sirven para encontrar datos alternativos a zonas donde no los hay. 
+
+- Formé parte en el desarrollo de un AVM para estimar datos unitarios basado en algoritmos de arboles de decision. 
+
+- Creación de carteras con datos de consumo, emisión y riesgos para bancos externos. Mantenemos una base con datos de eficiencia energetica y riesgos. Para ello se necesita hacer scrapping de datos en varias páginas. Estos datos son procesados y pasados por algoritmos y reglas de negocio para devolver a los cliente externos (En su mayoría cartera de más de 50 000 registros) Docker para productivizar, y fastapi para la API.
+	
+- Varios proyectos similares a los descritos, en todos los proyectos se usan tecnologías relacionadas con los datos y python (pandas, flask, fastapi, Docker, POSTGRE, MONGODB, ...)
+
+Otros estudios:
+ Coursera logo
+	Data Science Math Skills
+	Data Science Math Skills
+	CourseraCoursera
+	Issued Sep 2020Issued Sep 2020
+	Credential ID GGLTSFRCG4R6Credential ID GGLTSFRCG4R6
+	
+	Skills: SQL
+	Skills: SQL
+	Coursera logo
+	Getting Started with AWS Machine Learning
+	Getting Started with AWS Machine Learning
+	CourseraCoursera
+	Issued Aug 2020Issued Aug 2020
+	Credential ID CJF8ZJBR2GQUCredential ID CJF8ZJBR2GQU
+	
+	The Bridge | Digital Talent Accelerator logo
+	Complex Problem Solving
+	Complex Problem Solving
+	The Bridge | Digital Talent AcceleratorThe Bridge | Digital Talent Accelerator
+	Issued Jul 2020Issued Jul 2020
+	
+	The Bridge | Digital Talent Accelerator logo
+	Python Fundamentals
+	Python Fundamentals
+	The Bridge | Digital Talent AcceleratorThe Bridge | Digital Talent Accelerator
+	Issued Jul 2020Issued Jul 2020
+	
+	The Bridge | Digital Talent Accelerator logo
+	Data Analyst
+	Data Analyst
+	The Bridge | Digital Talent AcceleratorThe Bridge | Digital Talent Accelerator
+	Issued Jun 2020Issued Jun 2020
+	
+	Skills: SQL
+	Skills: SQL
+	The Bridge | Digital Talent Accelerator logo
+	Maths for Data Science
+	Maths for Data Science
+	The Bridge | Digital Talent AcceleratorThe Bridge | Digital Talent Accelerator
+	Issued Jun 2020Issued Jun 2020
+	
+	Coursera logo
+	Applied Plotting, Charting & Data Representation in Python
+	Applied Plotting, Charting & Data Representation in Python
+	CourseraCoursera
+	Issued Nov 2019Issued Nov 2019
+	Credential ID UMWZGA8UXCYXCredential ID UMWZGA8UXCYX
+	
+	Coursera logo
+	Introduction to Data Science in Python
+	Introduction to Data Science in Python
+	CourseraCoursera
+	Issued Aug 2019Issued Aug 2019
+	Credential ID YDVKU6W7792DCredential ID YDVKU6W7792D
+	
+	Coursera logo
+	Python Specialization | University of Michigan (5 Courses)
+	Python Specialization | University of Michigan (5 Courses)
+	CourseraCoursera
+	Issued Aug 2019Issued Aug 2019
+	Credential ID E4HTB3JA9L3LCredential ID E4HTB3JA9L3L
+
+Actualmente cursando el Curso ESPECIALISTA ENAPRENDIZAJE AUTOMÁTICO EN AWS. Auspiciado por la comunidad de Madrid y que habilita a la obtención de un certificado AWS
+
+
+
+Soft skills:
+Me considero con una gran capacidad de adaptación (soy emigrante, mi historia lo dice), Resiliencia, gran trabajo en equipo contrastado por mis anteriores experiencias, Gran pensamiento critico en momentos de extres, resolución de problemas. 
+A mejorar, laorganización y planificacion de trabajo. Aunque ya estoy trabajando en ello utilizando distintas herramientas como Trello, confluence one note etc.. Aún queda un margen de mejora para mejorar mi productividad.

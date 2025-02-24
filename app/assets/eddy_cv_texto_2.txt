@@ -1,0 +1,192 @@
+# PERFIL PROFESIONAL
+Ingeniero de Datos con 3+ años de experiencia en:
+- Arquitecturas ETL a escala (3M+ registros)
+- Desarrollo de APIs con FastAPI/Flask
+- Machine Learning aplicado (regresión, clustering, NLP)
+- Soluciones cloud-first (AWS, Docker)
+
+Especializado en transformar datos complejos en insights accionables para sectores financieros e inmobiliarios. Apasionado por proyectos innovadores que combinan IA generativa con análisis tradicional.
+
+---
+
+# EXPERIENCIA LABORAL
+
+## **Gloval Analytics** | Ingeniero de Datos Senior (Nov 2020 - Actual)
+*Sociedad tasadora líder, clientes incluyen bancos internacionales (España, Portugal, UK)*
+
+### Logros Clave:
+- **Sistema ETL Avanzado**:
+  - Procesamiento mensual de 20K+ testigos inmobiliarios
+  - Integración IDEALISTA API + IA generativa para análisis textual
+  - 10x mejora en velocidad creación expedientes
+
+- **Motor de Recomendación**:
+  - API REST con FastAPI (Dockerizada)
+  - Algoritmo híbrido (regresión lineal + KNN)
+  - 60% tasa de adopción por tasadores
+
+- **Plataforma de Scraping**:
+  - Extracción 2M+ certificaciones energéticas
+  - Pipeline con Pandas + Scrapy + PostgreSQL
+  - Dockerización para despliegue multi-cliente
+
+### Tecnologías: Python, FastAPI, Docker, PostgreSQL, AWS EC2, Scikit-learn, SpaCy
+
+---
+
+## **ConscienseAI** | Ingeniero de Machine Learning (Sep 2020 - Dic 2021)
+*Startup de IA aplicada a neurociencia*
+
+### Logros:
+- Refactorización código base para modelos deep learning
+- Optimización pipelines de datos biomédicos
+- Implementación sistema de versionado modelos (DVC)
+
+### Tecnologías: Python, TensorFlow, PyTorch, DVC, MongoDB
+
+---
+
+# FORMACIÓN ACADÉMICA
+
+## **Bootcamp Data Science** | The Bridge (Feb 2020 - Jul 2020)
+- Especialización en ETL, ML ops y visualización
+- Proyecto final: Sistema recomendación hashtags Instagram (NLP)
+
+## **Ing. Telecomunicaciones** | Universidad CUJAE (2007-2012)
+- Proyecto final: Metamateriales para redes 5G
+- Liderazgo equipos instalación infraestructura fibra óptica
+
+---
+
+# HABILIDADES TÉCNICAS
+
+**Lenguajes**: Python (Avanzado), SQL (Avanzado), Bash  
+**Data Engineering**: ETL, Airflow, Docker, APIs REST, Web Scraping  
+**ML/Cloud**: Scikit-learn, AWS SageMaker, TensorFlow, DVC  
+**Herramientas**: Git, Data Studio, Tableau, Postman, Swagger  
+**Bases de Datos**: PostgreSQL, MongoDB, Redis  
+
+---
+
+# CERTIFICACIONES
+- AWS Certified Machine Learning Specialist (En curso) | Comunidad de Madrid
+- Applied Data Science with Python | University of Michigan (5 cursos)
+- Data Science Math Skills | Duke University (Coursera)
+- Docker Essentials | IBM (Coursera)
+
+---
+
+# PROYECTOS DESTACADOS
+1. **AVM para Valoración Inmobiliaria**:
+   - Modelo ensemble (árboles de decisión + redes neuronales)
+   - Precisión 92% vs valoraciones manuales
+
+2. **Clusterización Zonas Inmobiliarias**:
+   - Algoritmo custom KNN + PCA
+   - 4x aumento cobertura en áreas rurales
+
+3. **Sistema Detección Patrones Textuales**:
+   - NLP con SpaCy + Transformers
+   - Identificación automática condiciones especiales de propiedades
+
+---
+
+# SOFT SKILLS
+✅ Adaptabilidad extrema (experiencia migratoria)  
+✅ Resiliencia en entornos de alta presión  
+✅ Pensamiento computacional aplicado a problemas empresariales  
+✅ Comunicación técnica efectiva (equipos multidisciplinares)  
+
+Áreas de mejora:  
+- Priorización tareas (implementando metodología GTD)  
+- Documentación técnica (usando Swagger/Confluence)  
+
+---
+
+# CONTACTO
+📧 eddytovarrodriguez@gmail.com  
+📱 +34 641 879 259  
+🔗 [LinkedIn](https://linkedin.com/in/eddytovar)  
+✍️ [Medium](https://medium.com/@e2varadero)  
+
+---
+
+# CONTEXTO PERSONAL (Para enriquecer respuestas del bot)
+
+## **Trayectoria Vital**
+- ✅ **Edad como ventaja**: 36 años (16/01/1988) - Combina experiencia técnica (13+ años) con mentalidad innovadora
+- 🌍 **Adaptabilidad probada**: 
+  - Emigración Cuba-España (2018) con reinvención profesional exitosa
+  - Transición telecomunicaciones → data science en 2 años
+- 🧠 **Mentalidad de crecimiento**: 
+  - Autodidacta desde 2018 (Python, ML)
+  - 15+ certificaciones obtenidas mientras trabajaba
+
+---
+
+# SOFT SKILLS EN CONTEXTO REAL
+
+## **Resiliencia Comprobada**
+- Superó crisis migratoria 2018: 
+  - Aprendió Python desde cero mientras trabajaba en reparación ordenadores
+  - Logró primer trabajo tech en 18 meses sin red de contacto inicial
+
+## **Liderazgo Adaptativo**
+- Dirigió equipos multiculturales:
+  - 8 ingenieros en Cuba (entorno restrictivo)
+  - Equipos remotos en Gloval (ES/PT/UK)
+  - Técnica: Comunicación asíncrona + documentación ejecutable
+
+## **Gestión de Incertidumbre**
+- Caso real: Pandemia 2020 (primer empleo tech en riesgo)
+  - Creó portfolio con 5 proyectos personales en 3 meses
+  - Resultado: Promoción a rol senior en Gloval
+
+## **Mejora Continua**
+- Sistema personal de productividad:
+  - Método GTD + Notion (seguimiento diario)
+  - Time-blocking para aprendizaje técnico (2h/día)
+  - Retrospectivas semanales con KPI cuantitativos
+
+---
+
+# DETALLES DEMOGRÁFICOS ESTRATÉGICOS
+- **Nacionalidad**: Cubano-Español (doble ciudadanía desde 2021)
+- **Idiomas**: 
+  - Español (nativo)
+  - Inglés (técnico B2 - certificado TOEIC 2022)
+- **Situación laboral**: 
+  - Contrato indefinido (Gloval)
+  - Abierto a oportunidades con mayor impacto en IA generativa
+
+---
+
+# HISTORIA MOTIVACIONAL
+"Mi transición de telecomunicaciones a data science (2018-2020):
+- **Reto**: Cambio de sector sin red profesional en España
+- **Acciones**: 
+  1. Reducción salarial temporal para entrar en bootcamp
+  2. Red de mentores creada via LinkedIn (50+ conexiones estratégicas)
+  3. Proyectos open-source como portfolio técnico
+- **Resultado**: Primer contrato tech en 9 meses desde inicio bootcamp"
+
+---
+
+# GESTIÓN DE DEBILIDADES
+**Área de mejora**: Organización  
+**Solución implementada**:  
+- Stack tecnológico: 
+  - Notion (gestión tareas)
+  - Toggl Track (seguimiento tiempo)
+  - Scripts Python personalizados (automatización reportes)  
+**Resultado**:  
+- 30% aumento productividad (métricas 2023 vs 2022)
+- 80% reducción deadlines incumplidos
+
+---
+
+# FILOSOFÍA PROFESIONAL
+"Principios que guían mi trabajo:
+1. **Automatización con propósito**: Cada script debe ahorrar 10x su tiempo de desarrollo
+2. **Documentación viva**: Los comentarios en código son casos de uso ejecutables
+3. **Ética en IA**: Modelos deben ser explicables y auditables por diseño"
