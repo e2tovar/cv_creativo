@@ -1,4 +1,4 @@
 Pillow
 streamlit
-openai
 python-dotenv
+groq
