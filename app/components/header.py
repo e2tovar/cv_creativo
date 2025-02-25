@@ -4,7 +4,7 @@ from app.settings import NAME, DESCRIPTION
 def show_header(profile_pic, cv_pdf, download_name):
     col1, col2 = st.columns(2, gap='small')
     with col1:
-        st.image(profile_pic, width=230)
+        st.image(profile_pic, width=180)
 
     # Divisor vertical con HTML
     st.markdown(
