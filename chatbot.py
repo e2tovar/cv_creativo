@@ -1,16 +1,17 @@
-import os
 from openai import OpenAI
+from openai import RateLimitError
 from dotenv import load_dotenv
 import streamlit as st
 
 from prompt import JOKER_PROMPT, WELCOME_PROMPT, CV_PROMPT
+from app.settings import GITHUB_BASE
 
 load_dotenv()
 
 class Chatbot:
     def __init__(self):
         self.client = OpenAI(
-            base_url=st.secrets["GITHUB_BASE"],
+            base_url=GITHUB_BASE,
             api_key=st.secrets["GITHUB_KEY"],
         )
 
@@ -26,15 +27,21 @@ class Chatbot:
         return response.choices[0].message.content
 
     def get_welcome(self):
-        welcome_message = self.client.chat.completions.create(
-            messages=[
-                {"role": "system", "content": self.__generate_welcome_prompt()}
-            ],
-            model="gpt-4o-mini",
-            temperature=0.85
-        )
+        try:
+            welcome_message = self.client.chat.completions.create(
+                messages=[
+                    {"role": "system", "content": self.__generate_welcome_prompt()}
+                ],
+                model="gpt-4o-mini",
+                temperature=0.85
+            )
 
-        return welcome_message.choices[0].message.content
+            return welcome_message.choices[0].message.content
+        except RateLimitError as e:
+            # Devuelve el mensaje
+            elimit = e.response.json()["error"]["message"]
+            msg = "Lo siento, Eddy no quiere pagar más por mi, hemos alcanzado el límite de peticiones"
+            return f"{msg}\n\n{elimit}"
 
     def get_question_joke(self, user_input):
         joke_message = self.client.chat.completions.create(

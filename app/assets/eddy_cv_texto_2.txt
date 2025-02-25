@@ -27,7 +27,7 @@ Especializado en transformar datos complejos en insights accionables para sector
 
 - **Plataforma de Scraping**:
   - Extracción 2M+ certificaciones energéticas
-  - Pipeline con Pandas + Scrapy + PostgreSQL
+  - Pipeline con Pandas + Selenium + PostgreSQL
   - Dockerización para despliegue multi-cliente
 
 ### Tecnologías: Python, FastAPI, Docker, PostgreSQL, AWS EC2, Scikit-learn, SpaCy
@@ -38,9 +38,7 @@ Especializado en transformar datos complejos en insights accionables para sector
 *Startup de IA aplicada a neurociencia*
 
 ### Logros:
-- Refactorización código base para modelos deep learning
-- Optimización pipelines de datos biomédicos
-- Implementación sistema de versionado modelos (DVC)
+- Refactorización código base para modelos de AI
 
 ### Tecnologías: Python, TensorFlow, PyTorch, DVC, MongoDB
 

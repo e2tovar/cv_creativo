@@ -1,5 +1,4 @@
 Pillow
 streamlit
 openai
-sentence-transformers
 python-dotenv
