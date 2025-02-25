@@ -2,7 +2,6 @@ import streamlit as st
 import time
 
 from chatbot import Chatbot
-from app.utils.embeddings_utils import find_most_relevant_chunk, get_all_cv
 from app.utils.images import image_to_base64
 
 

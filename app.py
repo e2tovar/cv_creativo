@@ -1,7 +1,6 @@
 import os
 import streamlit as st
 from PIL import Image
-import pickle
 
 from app.components.header import show_header
 from app.components.social_links import show_social
@@ -37,13 +36,6 @@ with open(resume_file, "rb") as pdf_temp:
     PDFbyte = pdf_temp.read()
 profile_pic = Image.open(profile_pic)
 
-# --- LOAD PREPROCESSED DATA ---
-with open("app/assets/embeddings.pkl", "rb") as f:
-    data = pickle.load(f)
-    chunks = data["chunks"]
-    embeddings = data["embeddings"]
-    model_embeddings = data["model_embeddings"]
-
 # --- INIT SESSION STATES ---
 if 'chatbot' not in st.session_state:
     st.session_state.chatbot = Chatbot()  # Inicializar el chatbot
@@ -53,7 +45,6 @@ if 'chat_history' not in st.session_state:
 
 # DEBUG
 # st.write(f"History: {st.session_state.chat_history}")
-
 
 # --- HEADER ---
 show_header(profile_pic=profile_pic, cv_pdf=PDFbyte, download_name='EddyTovar.pdf')
@@ -77,17 +68,5 @@ show_publications()
 show_soft_skills()
 
 # --- SIDEBAR BOT ---
-chat_result = show_sidebar_bots(
-    cv=cv_txt, botsito=st.session_state.chatbot
-)
-
-
+chat_result = show_sidebar_bots(cv=cv_txt, botsito=st.session_state.chatbot)
 # show_footer()
-
-
-# # Interacción con el usuario
-# user_input = st.text_input("Escribe tu pregunta:")
-# if user_input:
-#     relevant_chunk = find_most_relevant_chunk(user_input, chunks, embeddings, model)
-#     response = chatbot.get_response(user_input, relevant_chunk)
-#     st.write(f"**Respuesta:** {response}")
