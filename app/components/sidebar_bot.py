@@ -29,6 +29,7 @@ def __show_sidebar_welcome_bot(botsito: Chatbot, chat_history=[]):
             welcome_msg = botsito.get_welcome()
             texto = welcome_msg
         else:
+            print(chat_history[-1][0])
             joke = botsito.get_question_joke(user_input=chat_history[-1][0])
             texto = joke
         # Add bot gif with markdown
@@ -52,7 +53,7 @@ def __call_chatbot(botsito: Chatbot, cv, chat_history):
     user_input = st.session_state.user_input
     if user_input:
         response = botsito.get_response(user_input, cv, chat_history)
-        st.session_state.chat_history.append((user_input + cv, response))
+        st.session_state.chat_history.append((user_input, response))
 
 
 # Función para simular el efecto de escritura

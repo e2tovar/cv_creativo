@@ -1,18 +1,16 @@
-from openai import OpenAI
-from openai import RateLimitError
+from groq import Groq
 from dotenv import load_dotenv
 import streamlit as st
 
 from prompt import JOKER_PROMPT, WELCOME_PROMPT, CV_PROMPT
-from app.settings import GITHUB_BASE
+from app.settings import MODEL_CHATBOT
 
 load_dotenv()
 
 class Chatbot:
     def __init__(self):
-        self.client = OpenAI(
-            base_url=GITHUB_BASE,
-            api_key=st.secrets["GITHUB_KEY"],
+        self.client = Groq(
+            api_key=st.secrets["API_KEY"],
         )
 
     def get_response(self, user_input, cv, chat_history):
@@ -21,7 +19,7 @@ class Chatbot:
                 {"role": "system", "content": self.__generate_cv_prompt(cv, chat_history)},
                 {"role": "user", "content": user_input}
             ],
-            model="gpt-4o-mini",
+            model=MODEL_CHATBOT,
             temperature=0.3
         )
         return response.choices[0].message.content
@@ -32,23 +30,22 @@ class Chatbot:
                 messages=[
                     {"role": "system", "content": self.__generate_welcome_prompt()}
                 ],
-                model="gpt-4o-mini",
+                model=MODEL_CHATBOT,
                 temperature=0.85
             )
 
             return welcome_message.choices[0].message.content
-        except RateLimitError as e:
+        except Exception as e:
             # Devuelve el mensaje
-            elimit = e.response.json()["error"]["message"]
             msg = "Lo siento, Eddy no quiere pagar más por mi, hemos alcanzado el límite de peticiones"
-            return f"{msg}\n\n{elimit}"
+            return f"{msg}"
 
     def get_question_joke(self, user_input):
         joke_message = self.client.chat.completions.create(
             messages=[
                 {"role": "system", "content": self.__generate_joke_prompt(user_input)}
             ],
-            model="gpt-4o-mini",
+            model=MODEL_CHATBOT,
             temperature=0.8
         )
 
