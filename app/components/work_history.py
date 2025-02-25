@@ -2,7 +2,7 @@ import streamlit as st
 
 def show_work_history():
     st.write('\n')
-    st.subheader("Work History")
+    st.subheader("Experiencia Laboral")
     st.write("---")
 
     # --- JOB 1
