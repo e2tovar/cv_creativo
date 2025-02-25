@@ -23,9 +23,6 @@ CV_TXT = 'eddy_cv_texto_2.txt'
 
 
 # Modelos
-MODEL_EMBEDDING = 'sentence-transformers/all-MiniLM-L6-v2'
+MODEL_CHATBOT = 'llama-3.1-8b-instant'
 MODEL_CHAT = ''
 MAX_HISTORY = 5
-
-
-GITHUB_BASE = "https://models.inference.ai.azure.com"

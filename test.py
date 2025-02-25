@@ -1,40 +1,29 @@
-import streamlit as st
+"""Run this model in Python
 
-# Inicializar el historial de la conversación
-if 'history' not in st.session_state:
-    st.session_state['history'] = []
+> pip install azure-ai-inference
+"""
+import os
+from azure.ai.inference import ChatCompletionsClient
+from azure.ai.inference.models import SystemMessage
+from azure.ai.inference.models import UserMessage
+from azure.core.credentials import AzureKeyCredential
 
-# Función para agregar mensajes al historial
-def add_to_history(role, message):
-    st.session_state['history'].append({"role": role, "message": message})
-
-# Callback para manejar la entrada del usuario
-def on_input_change():
-    user_input = st.session_state.user_input
-    if user_input:
-        # Agregar el mensaje del usuario al historial
-        add_to_history("Usuario", user_input)
-
-        # Lógica del bot (en este caso, simplemente repite el mensaje)
-        bot_response = f"Escuché que dijiste '{user_input}'"
-
-        # Agregar la respuesta del bot al historial
-        add_to_history("Bot", bot_response)
-
-        # Limpiar la entrada del usuario
-        st.session_state.user_input = ""
-
-# Interfaz de usuario
-st.title("Chatbot Simple con Callback")
-
-
-# Entrada del usuario con callback
-st.text_input(
-    "Escribe tu mensaje:",
-    key="user_input",
-    on_change=on_input_change
+# To authenticate with the model you will need to generate a personal access token (PAT) in your GitHub settings.
+# Create your PAT token by following instructions here: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens
+client = ChatCompletionsClient(
+    endpoint="https://models.github.ai/inference",
+    credential=AzureKeyCredential(os.environ["GITHUB_KEY"]),
 )
 
-# Mostrar el historial de la conversación
-for chat in st.session_state['history']:
-    st.write(f"{chat['role']}: {chat['message']}")
+response = client.complete(
+    messages=[
+        SystemMessage(""""""),
+        UserMessage("Can you explain the basics of machine learning?"),
+    ],
+    model="Meta-Llama-3.1-8B-Instruct",
+    temperature=0.8,
+    max_tokens=2048,
+    top_p=0.1
+)
+
+print(response.choices[0].message.content)
