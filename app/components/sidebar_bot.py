@@ -7,20 +7,37 @@ from app.utils.images import image_to_base64
 
 def show_sidebar_bots(botsito, cv):
     with st.sidebar:
-        st.text_input(
-            'pregunta',
-            label_visibility="hidden",
-            key="user_input",
-            on_change=__call_chatbot,
-            args=(botsito, cv, st.session_state.chat_history)
+        if st.session_state.show_disclaimer:
+            st.markdown(
+                """
+                <div class="container">
+                    <p>
+                        <b>NOTA:</b> NOTA: Este chatbot es una BETA. Proporciona información sobre el CV de Eddy Tovar,
+                        pero no es un asistente profesional. Puede contener errores. Para consultas directas, contacta a Eddy.
+                    </p>
+                </div>
+                """,
+                unsafe_allow_html=True
             )
+            st.session_state.show_disclaimer = False
+            st.button("Entendido")
 
-        __show_sidebar_welcome_bot(botsito, st.session_state.chat_history)
+        else:
+            st.text_input(
+                'pregunta',
+                label_visibility="hidden",
+                key="user_input",
+                on_change=__call_chatbot,
+                args=(botsito, cv, st.session_state.chat_history)
+                )
 
-        if st.session_state.chat_history:
-            st.markdown("---")
-            rsp = st.session_state.chat_history[-1][1]
-            __efecto_escritura(rsp)
+            __show_sidebar_welcome_bot(botsito, st.session_state.chat_history)
+
+            if st.session_state.chat_history:
+                st.markdown("---")
+                st.write("Aquí tu respuesta: ")
+                rsp = st.session_state.chat_history[-1][1]
+                __efecto_escritura(rsp)
 
 def __show_sidebar_welcome_bot(botsito: Chatbot, chat_history=[]):
     # Read if there is a label on the sidebar input

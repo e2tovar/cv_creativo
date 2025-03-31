@@ -20,7 +20,8 @@ class Chatbot:
                 {"role": "user", "content": user_input}
             ],
             model=MODEL_CHATBOT,
-            temperature=0.3
+            temperature=0.2,
+            reasoning_format="hidden"
         )
         return response.choices[0].message.content
 
@@ -31,13 +32,14 @@ class Chatbot:
                     {"role": "system", "content": self.__generate_welcome_prompt()}
                 ],
                 model=MODEL_CHATBOT,
-                temperature=0.85
+                temperature=0.85,
+                reasoning_format="hidden"
             )
 
             return welcome_message.choices[0].message.content
         except Exception as e:
             # Devuelve el mensaje
-            msg = "Lo siento, Eddy no quiere pagar más por mi, hemos alcanzado el límite de peticiones"
+            msg = "Lo siento, Eddy no quiere pagar más por mí, hemos alcanzado el límite de peticiones. Prueba en un rato..."
             return f"{msg}"
 
     def get_question_joke(self, user_input):
@@ -46,7 +48,8 @@ class Chatbot:
                 {"role": "system", "content": self.__generate_joke_prompt(user_input)}
             ],
             model=MODEL_CHATBOT,
-            temperature=0.8
+            temperature=0.8,
+            reasoning_format="hidden"
         )
 
         return joke_message.choices[0].message.content

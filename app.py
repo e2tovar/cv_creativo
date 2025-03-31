@@ -43,6 +43,9 @@ if 'chatbot' not in st.session_state:
 if 'chat_history' not in st.session_state:
     st.session_state.chat_history = []
 
+if 'show_disclaimer' not in st.session_state:
+    st.session_state.show_disclaimer = True
+
 # DEBUG
 # st.write(f"History: {st.session_state.chat_history}")
 
