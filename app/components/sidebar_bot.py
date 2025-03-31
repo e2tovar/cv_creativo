@@ -12,7 +12,7 @@ def show_sidebar_bots(botsito, cv):
                 """
                 <div class="container">
                     <p>
-                        <b>NOTA:</b> NOTA: Este chatbot es una BETA. Proporciona información sobre el CV de Eddy Tovar,
+                        <b>NOTA:</b> Este chatbot es una BETA. Proporciona información sobre el CV de Eddy Tovar,
                         pero no es un asistente profesional. Puede contener errores. Para consultas directas, contacta a Eddy.
                     </p>
                 </div>
