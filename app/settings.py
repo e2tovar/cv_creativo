@@ -23,6 +23,6 @@ CV_TXT = 'eddy_cv_texto_2.txt'
 
 
 # Modelos
-MODEL_CHATBOT = 'llama-3.1-8b-instant'
+MODEL_CHATBOT = 'llama3-70b-8192'
 MODEL_CHAT = ''
 MAX_HISTORY = 5
