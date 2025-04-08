@@ -20,8 +20,7 @@ class Chatbot:
                 {"role": "user", "content": user_input}
             ],
             model=MODEL_CHATBOT,
-            temperature=0.2,
-            reasoning_format="hidden"
+            temperature=0.2
         )
         return response.choices[0].message.content
 
@@ -32,8 +31,7 @@ class Chatbot:
                     {"role": "system", "content": self.__generate_welcome_prompt()}
                 ],
                 model=MODEL_CHATBOT,
-                temperature=0.85,
-                reasoning_format="hidden"
+                temperature=0.85
             )
 
             return welcome_message.choices[0].message.content
@@ -48,8 +46,7 @@ class Chatbot:
                 {"role": "system", "content": self.__generate_joke_prompt(user_input)}
             ],
             model=MODEL_CHATBOT,
-            temperature=0.8,
-            reasoning_format="hidden"
+            temperature=0.8
         )
 
         return joke_message.choices[0].message.content
