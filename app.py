@@ -65,7 +65,7 @@ with open(css_file, "r", encoding="utf-8") as f:
 if 'current_page' not in st.session_state:
     st.session_state.current_page = "CV"  # Default page
 
-query_params = st.experimental_get_query_params()
+query_params = st.query_params
 if "page" in query_params:
     page_param = query_params.get("page")[0]
     if page_param in ["CV", "Chat", "Thanks"]:
@@ -73,7 +73,7 @@ if "page" in query_params:
         # Clear query params to avoid it sticking on refresh if not desired,
         # and to make sure subsequent clicks on the same nav item work as expected
         # after navigating away and back via other means (if any).
-        st.experimental_set_query_params()
+        st.query_params.clear()
 
 with open(resume_file, "rb") as pdf_temp:
     PDFbyte = pdf_temp.read()
