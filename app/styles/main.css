@@ -41,3 +41,80 @@ hr {
 #MainMenu {visibility: hidden;}
 footer {visibility: hidden;}
 header {visibility: hidden;}
+
+/* Bottom Navigation Bar */
+.bottom-nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0; /* Light grey background */
+    border-top: 1px solid #cccccc; /* Light grey border */
+    display: flex;
+    justify-content: space-around; /* Distribute items evenly */
+    align-items: center;
+    padding: 10px 0; /* Add some padding */
+    z-index: 1000; /* Ensure it's above other content */
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.1); /* Optional: subtle shadow */
+}
+
+.bottom-nav a {
+    color: #333333 !important; /* Dark grey text, added !important to override general 'a' rule */
+    text-decoration: none;
+    padding: 10px 15px; /* Padding for touch targets */
+    border-radius: 5px; /* Slightly rounded corners for links */
+    font-weight: 500;
+    text-align: center;
+    flex-grow: 1; /* Make all links take equal space */
+}
+
+.bottom-nav a:hover {
+    background-color: #e0e0e0; /* Slightly darker grey on hover */
+    color: #d33682 !important; /* Keep hover color consistent with other links if desired, or specific color */
+}
+
+/* Active link styling (basic) */
+/* This requires knowing the current page. If st.session_state.current_page is 'CV',
+   the 'CV' link should be styled differently. This is hard to do with pure CSS
+   based on query params alone without JS or conditional HTML generation.
+   For now, this will be a static style. We can enhance this if needed by adding a class
+   conditionally in the nav_html generation in app.py */
+
+/* Adjust main content padding to prevent overlap with bottom nav */
+/* Target the main scrollable area in Streamlit. This selector might need adjustment
+   based on Streamlit's evolving internal structure.
+   A common selector for the main content area's direct child is often sufficient.
+   If div[data-testid="stVerticalBlock"] is too broad or too narrow,
+   inspect the app's HTML structure. Often, the stApp > main > section > div...
+   The goal is to add padding to the container that holds the page content.
+*/
+div.stApp > div > div > div > div[data-testid="stVerticalBlock"], /* Common for wide mode */
+div.stApp > div > div > div > section[data-testid="stSidebar"] + section.main > div > div[data-testid="stVerticalBlock"] /* Common when sidebar is present (even if hidden) */
+{
+    padding-bottom: 80px; /* Adjust this value based on the actual height of your nav bar + some buffer */
+}
+
+/* Fallback if the above is too specific or changes with Streamlit versions */
+/* body > div#root > div:first-child { padding-bottom: 80px; } */
+
+/* Ensure the Streamlit app itself can scroll if content exceeds viewport minus nav bar */
+/* This is generally default behavior but good to keep in mind. */
+
+/* Hide Streamlit Sidebar */
+div[data-testid="stSidebar"] {
+    display: none !important;
+}
+
+/* Ensure main content takes full width if sidebar is hidden */
+section[data-testid="stSidebar"] + section.main {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+/* Simpler approach if the above is too specific or doesn't work,
+   and to ensure padding is consistent for main content area. */
+.main > div {
+    max-width: 100% !important; /* Override Streamlit's default max-width for centered content */
+    padding-left: 1rem !important;  /* Add !important to ensure override */
+    padding-right: 1rem !important; /* Add !important to ensure override */
+}
