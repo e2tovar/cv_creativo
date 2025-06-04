@@ -36,11 +36,17 @@ def display_thanks_page():
     st.markdown("Gracias por visitar esta página interactiva.")
 
 def show_bottom_nav():
-    nav_html = '''
+    current_page = st.session_state.get("current_page", "CV") # Default to CV if not set
+
+    cv_active = "active" if current_page == "CV" else ""
+    chat_active = "active" if current_page == "Chat" else ""
+    thanks_active = "active" if current_page == "Thanks" else ""
+
+    nav_html = f'''
     <div class="bottom-nav">
-        <a href="?page=CV" target="_self">CV</a>
-        <a href="?page=Chat" target="_self">Chat</a>
-        <a href="?page=Thanks" target="_self">Agradecimientos</a>
+        <a href="?page=CV" class="{cv_active}" target="_self">📄 CV</a>
+        <a href="?page=Chat" class="{chat_active}" target="_self">💬 Chat</a>
+        <a href="?page=Thanks" class="{thanks_active}" target="_self">🎉 Agradecimientos</a>
     </div>
     '''
     st.markdown(nav_html, unsafe_allow_html=True)
@@ -67,7 +73,7 @@ if 'current_page' not in st.session_state:
 
 query_params = st.query_params
 if "page" in query_params:
-    page_param = query_params.get("page")[0]
+    page_param = query_params.get("page")
     if page_param in ["CV", "Chat", "Thanks"]:
         st.session_state.current_page = page_param
         # Clear query params to avoid it sticking on refresh if not desired,

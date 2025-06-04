@@ -73,6 +73,14 @@ header {visibility: hidden;}
     color: #d33682 !important; /* Keep hover color consistent with other links if desired, or specific color */
 }
 
+.bottom-nav a.active {
+    background-color: #cce5ff; /* A light blue background for active state */
+    color: #004085 !important; /* Darker blue text for active state, added !important */
+    font-weight: bold; /* Make text bold for active state */
+    border-bottom: 3px solid #004085; /* Optional: an underline/border effect */
+    padding-bottom: 7px; /* Adjust padding if border-bottom is used to maintain alignment */
+}
+
 /* Active link styling (basic) */
 /* This requires knowing the current page. If st.session_state.current_page is 'CV',
    the 'CV' link should be styled differently. This is hard to do with pure CSS
